@@ -29,5 +29,5 @@ return drivers.slice().sort(function (a, b) {
 function totalRevenue(drivers) {
   return drivers.reduce(function(accumulator, driver, currentIndex, array) {
     return accumulator + driver.revenue;
-  });
+  }, 0);
 }
