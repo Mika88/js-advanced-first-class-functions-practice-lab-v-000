@@ -25,3 +25,9 @@ return drivers.slice().sort(function (a, b) {
   return a.name.localeCompare(b.name);
  });
 };
+
+function totalRevenue(drivers) {
+  drivers.reduce(function(accumulator, driver.revenue, currentIndex, array) {
+    return accumulator + driver.revenue;
+  });
+}
